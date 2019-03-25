@@ -15,4 +15,12 @@ public class HelloWorld {
     public void printHelloWorld() {
         System.out.println("hello====" + hello);
     }
+
+
+    public HelloWorld(String hello) {
+        this.hello = hello;
+    }
+
+    public HelloWorld() {
+    }
 }

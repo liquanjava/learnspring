@@ -3,7 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="helloworld" class="com.example.learnspring.firstclass.HelloWorld">
+    <bean id="helloworld1" class="com.example.learnspring.firstclass.HelloWorld">
         <property name="hello" value="huhuiming"></property>
+    </bean>
+    <bean id="helloworld" class="com.example.learnspring.firstclass.HelloWorld">
+        <constructor-arg value="hu" type="java.lang.String"></constructor-arg>
     </bean>
 </beans>

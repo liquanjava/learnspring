@@ -6,13 +6,17 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class PrintHello {
 
     public static void main(String[] args) {
-        HelloWorld helloWorld = new HelloWorld();
+      //  HelloWorld helloWorld = new HelloWorld();
 //        helloWorld.setHello("liquan");
 //        helloWorld.printHelloWorld();
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        HelloWorld helloWorld1 = (HelloWorld)applicationContext.getBean("helloworld");
+        HelloWorld helloWorld1 = (HelloWorld)applicationContext.getBean("helloworld1");
         helloWorld1.printHelloWorld();
+
+        HelloWorld bean = (HelloWorld)applicationContext.getBean("helloworld");
+
+        bean.printHelloWorld();
     }
 }
